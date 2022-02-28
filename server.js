@@ -4,7 +4,7 @@ const serveStatic = require('serve-static');
 
 // set hostname and portnumber
 const hostname = '0.0.0.0';
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 const app = express();
 
