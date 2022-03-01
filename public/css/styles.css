@@ -28,6 +28,13 @@
     transition: all 0.3s ease;
 }
 
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
 .navbar.sticky {
     background: grey;
 }
@@ -133,7 +140,7 @@
 .category .mouse {
     position: relative;
     transition: transform 0.3s;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .category .headphones:hover,
@@ -180,14 +187,13 @@
 
 /* Featured Products Styling */
 .featured-products {
-
     padding: 50px 0;
     background: #000;
 }
 
 .featured-products .featured-content,
 .latest-products .latest-products-content,
-.offer .offer-content{
+.offer .offer-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -373,34 +379,33 @@
 }
 
 .footer-content .parts-3 img {
-    align-items: center;
     display: block;
-    margin: 0 30%;
     width: 170px;
     height: 80px;
 }
 
 .footer-content .parts-3 p {
     padding-top: 20px;
+    text-align: start;
     color: grey;
 }
 
-.footer-content .parts-3 ul{
+.footer-content .parts-3 ul {
     padding-top: 20px;
 }
 
-.footer-content .parts-3 .social-media-share {  
+.footer-content .parts-3 .social-media-share {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
 }
 
-.footer-content .parts-3  ul li a {
+.footer-content .parts-3 ul li a {
     transition: all 0.3s ease;
 }
 
-.footer-content .parts-3  ul li a:hover {  
+.footer-content .parts-3 ul li a:hover {
     color: crimson;
 }
 
@@ -409,12 +414,12 @@
     transition: all 0.3s ease;
 }
 
-.footer-content .parts-3 .social-media-share .fa-brands:hover {  
+.footer-content .parts-3 .social-media-share .fa-brands:hover {
     color: crimson;
     transform: translateY(-5px);
 }
 
-.footer-content .parts-3 ul li a{
+.footer-content .parts-3 ul li a {
     color: grey;
 }
 
@@ -425,6 +430,177 @@
     height: 1px;
 }
 
-.copyright{
+.copyright {
     text-align: center;
+}
+
+
+@media (max-width: 850px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+
+    .hero .hero-content .text-2 {
+        font-size: 65px;
+        font-weight: 500;
+    }
+
+    .hero .hero-content a {
+        font-size: 18px;
+        padding: 5px 25px;
+        margin-top: 15px;
+    }
+
+    .featured-products .featured-content,
+    .latest-products .latest-products-content {
+        justify-content: space-around;
+    }
+}
+
+
+@media (max-width: 740px) {
+    .hero .hero-content .text-1 {
+        font-size: 20px;
+    }
+
+    .hero .hero-content .text-2 {
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    .hero .hero-content a {
+        font-size: 18px;
+        padding: 5px 25px;
+        margin-top: 15px;
+    }
+
+    .testimonial .testimonial-content {
+        display: block;
+    }
+
+    .testimonial .cards-3 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 640px) {
+
+    .offer .offer-content,
+    .footer .footer-content {
+        display: block;
+    }
+
+    .offer .offer-content .side-img img {
+        margin-bottom: 30px;
+    }
+
+    .offer .offer-content .offer-details {
+        text-align: center;
+    }
+
+    .footer .footer-content .parts-3 {
+        margin-bottom: 50px;
+    }
+
+    .footer .footer-content .parts-3 img,
+    .footer .footer-content .parts-3 p {
+        margin: auto;
+        text-align: center;
+    }
+
+    .category .max-width {
+        display: grid;
+        grid-template: repeat(2, 200px) / repeat(2, 1fr);
+    }
+
+    .category .headphones {
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+
+    .category .mouse {
+        grid-column-start: 2;
+        grid-column-end: span 1;
+    }
+}
+
+@media (max-width: 500px) {
+    .category {
+        height: 65rem;
+    }
+
+    .category .max-width {
+        display: grid;
+        grid-template: repeat(4, 200px) / repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .category .headphones {
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+
+    .category .mouse {
+        grid-column-start: 1;
+        grid-column-end: span 1;
+    }
+}
+
+@media (max-width: 355px) {
+    .max-width {
+        padding: 0 30px;
+    }
+
+    .hero .hero-content {
+        text-align: center;
+    }
+
+    .hero .hero-content .text-1 {
+        font-size: 18px;
+    }
+
+    .hero .hero-content .text-2 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .hero .hero-content a {
+        font-size: 18px;
+        padding: 5px 25px;
+        margin-top: 15px;
+    }
 }
