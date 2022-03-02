@@ -72,13 +72,12 @@
 .hero {
     display: flex;
     align-items: flex-start;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner.jpg') no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner-1.jpg') no-repeat center;
     background-size: cover;
     height: 80vh;
     color: #fff;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
-
 }
 
 .hero .hero-content .text-1 {

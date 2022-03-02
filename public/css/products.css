@@ -1,0 +1,143 @@
+/* Shared Styling */
+.hero {
+    display: flex;
+    align-items: flex-start;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner-2.jpg') no-repeat center;
+    background-size: cover;
+    height: 60vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section {
+    font-family: 'Poppins', sans-serif;
+}
+
+.filter .max-width {
+    margin: 80px auto;
+}
+
+.filter .filter-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filter-content .parts-1,
+.filter-content .parts-2 {
+    align-self: flex-start;
+}
+
+.filter-content .parts-1 {
+    flex-basis: 25%;
+}
+
+.filter-content .parts-2 {
+    flex-basis: 70%;
+}
+
+
+/* Filter Styling */
+.filter-content .parts-1 .filter-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #D3D3D3;
+    transition: transform 0.3s;
+}
+
+.filter-content .parts-1 .filter-item:hover {
+    transform: translateX(10px);
+}
+
+.fa-solid.fa-angle-down {
+    padding-left: 50px;
+    transition: all 0.3s ease;
+}
+
+.filter-content .parts-1 .filter-item.active {
+    cursor: default;
+    transform: translateX(10px);
+}
+
+.fa-solid.fa-angle-down.active {
+    transform: rotate(-90deg);
+    padding-left: initial !important;
+}
+
+
+/* Search Bar Styling */
+.filter-content .parts-2 .search-bar {
+    display: flex;
+    border: 1px solid #D3D3D3;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.filter-content .parts-2 .search-bar input {
+    width: 100%;
+    border: none;
+    font-size: 20px;
+}
+
+.filter-content .parts-2 .search-bar input:focus {
+    outline: none;
+}
+
+.fa-solid.fa-magnifying-glass{
+    cursor: pointer;
+}
+
+
+/* Product Listing Styling */
+.filter .filter-content .parts-2 .product-listing {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-content .parts-2 .product-listing .card {
+    border: 1px solid #D3D3D3;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.parts-2 .product-listing .card .box a img {
+    width: auto;
+    height: auto;
+    margin-top: 0;
+}
+
+
+/* Pagination Styling */
+.page-btn {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+.page-btn span {
+    display: inline-block;
+    border: 1px solid #D3D3D3;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page-btn span:hover {
+    background: #000;
+    color: #fff;
+}

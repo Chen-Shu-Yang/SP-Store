@@ -23,6 +23,49 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active");
     });
 
+    // Toggle Filter Script
+    $('#all').click(function () {
+        $('.filter-content .parts-1 .filter-item').removeClass("active");
+        $('.fa-solid.fa-angle-down').removeClass("active");
+        $('#all').toggleClass("active");
+        $('#all .fa-solid.fa-angle-down').toggleClass("active");
+    });
+
+    $('#headphones').click(function () {
+        $('.filter-content .parts-1 .filter-item').removeClass("active");
+        $('.fa-solid.fa-angle-down').removeClass("active");
+        $('#headphones').toggleClass("active");
+        $('#headphones .fa-solid.fa-angle-down').toggleClass("active");
+    });
+
+    $('#laptops').click(function () {
+        $('.filter-content .parts-1 .filter-item').removeClass("active");
+        $('.fa-solid.fa-angle-down').removeClass("active");
+        $('#laptops').toggleClass("active");
+        $('#laptops .fa-solid.fa-angle-down').toggleClass("active");
+    });
+
+    $('#tablets').click(function () {
+        $('.filter-content .parts-1 .filter-item').removeClass("active");
+        $('.fa-solid.fa-angle-down').removeClass("active");
+        $('#tablets').toggleClass("active");
+        $('#tablets .fa-solid.fa-angle-down').toggleClass("active");
+    });
+
+    $('#mouse').click(function () {
+        $('.filter-content .parts-1 .filter-item').removeClass("active");
+        $('.fa-solid.fa-angle-down').removeClass("active");
+        $('#mouse').toggleClass("active");
+        $('#mouse .fa-solid.fa-angle-down').toggleClass("active");
+    });
+
+    $('#watches').click(function () {
+        $('.filter-content .parts-1 .filter-item').removeClass("active");
+        $('.fa-solid.fa-angle-down').removeClass("active");
+        $('#watches').toggleClass("active");
+        $('#watches .fa-solid.fa-angle-down').toggleClass("active");
+    });
+
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
