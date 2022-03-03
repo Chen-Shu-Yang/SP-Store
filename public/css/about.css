@@ -14,10 +14,6 @@ section {
     font-family: 'Poppins', sans-serif;
 }
 
-.filter .max-width {
-    margin: 80px auto;
-}
-
 .brands .brands-content {
     display: flex;
     flex-wrap: wrap;
