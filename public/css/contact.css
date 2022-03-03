@@ -1,0 +1,175 @@
+/* Shared Styling */
+.hero {
+    display: flex;
+    align-items: flex-start;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner-3.jpg') no-repeat center;
+    background-size: cover;
+    height: 60vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section {
+    font-family: 'Poppins', sans-serif;
+}
+
+.filter .max-width {
+    margin: 80px auto;
+}
+
+.brands .brands-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* About Us Styling */
+.about-us .max-width {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.about-us img {
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.about-us h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+
+/* Our Team Styling */
+.team h1,
+.brands h1 {
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.team h1::before,
+.brands h1::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 100px;
+    height: 3px;
+    background: crimson;
+    transform: translateX(-50%);
+}
+
+.team {
+    padding-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.team .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team .carousel .teams-3 {
+    background: #d3d3d3;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.team .carousel .teams-3 .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.team .carousel .teams-3 .box:hover {
+    transform: scale(1.05);
+}
+
+.team .carousel .teams-3 .box img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid crimson;
+}
+
+.teams-3 .box p {
+    margin: 20px 30px;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #000 !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+    background: #000 !important;
+} 
+
+
+
+/* Our Partners Styling */
+.brands {
+    margin: 100px auto;
+}
+
+.brands-content .col-5 {
+    width: 130px;
+}
+
+.brands-content .col-5 img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.brands-content .col-5 img:hover {
+    filter: grayscale(0);
+    transform: scale(1.10);
+}
+
+#samsungLogo, #asusLogo, #paypalLogo {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+#samsungLogo:hover, #asusLogo:hover,
+#paypalLogo:hover {
+    filter: grayscale(0);
+    transform: scale(1.10);
+}

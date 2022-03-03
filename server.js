@@ -32,6 +32,14 @@ app.get('/products', (req, res) => {
   res.sendFile('/public/html/products.html', { root: __dirname });
 });
 
+app.get('/about', (req, res) => {
+  res.sendFile('/public/html/about.html', { root: __dirname });
+});
+
+app.get('/contact', (req, res) => {
+  res.sendFile('/public/html/contact.html', { root: __dirname });
+});
+
 app.get('/productdetails', (req, res) => {
   res.sendFile('/public/html/product-details.html', { root: __dirname });
 });
