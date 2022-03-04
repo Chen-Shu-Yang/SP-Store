@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $(window).scroll(function() {
-        if(this.scrollY > 20) {
+    $(window).scroll(function () {
+        if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
         } else {
             $('.navbar').removeClass("sticky");
@@ -14,7 +14,7 @@ $(document).ready(function () {
 
     // slide-up script
     $('.scroll-up-btn').click(function () {
-        $('html').animate({scrollTop: 0});
+        $('html').animate({ scrollTop: 0 });
     });
 
     // toggle menu/navbar script
