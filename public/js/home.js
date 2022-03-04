@@ -24,6 +24,29 @@ $(document).ready(function () {
     });
 
     // Toggle Filter Script
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get('category');
+
+    $(document).ready(function () {
+        switch (category) {
+            case 'headphone':
+                $("#headphones").click();
+                break;
+            case 'laptop':
+                $("#laptops").click();
+                break;
+            case 'tablet':
+                $("#tablets").click();
+                break; 
+            case 'mouse':
+                $("#mouse").click();
+                break; 
+            default:
+                $('#all').click();
+        }
+
+    });
+
     $('#all').click(function () {
         $('.filter-content .parts-1 .filter-item').removeClass("active");
         $('.fa-solid.fa-angle-down').removeClass("active");
