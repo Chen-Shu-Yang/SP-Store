@@ -67,6 +67,30 @@
     color: crimson;
 }
 
+.cart-btn {
+    position: relative;
+}
+
+.cart-btn::after {
+    content: attr(data-count);
+    position: absolute;
+    font-size: 12px;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    background: black;
+    color: #fff;
+    padding: 2px;
+    border-radius: 50%;
+    bottom: 7px;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.cart-btn:hover::after {
+    background: crimson;
+}
+
 
 /* Hero Banner Styling */
 .hero {
