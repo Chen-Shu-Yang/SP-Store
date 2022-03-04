@@ -1,0 +1,93 @@
+/* Shared Styling */
+.menu-btn {
+    color: #000;
+}
+
+.navbar .menu li a {
+    color: #000;
+}
+
+section {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Cart Styling */
+.cart .max-width {
+    padding: 200px 100px;
+}
+
+.cart .max-width .cart-details {
+    margin-bottom: 50px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    padding: 5px;
+    color: #fff;
+    background: #000;
+    font-weight: normal;
+}
+
+td {
+    padding: 10px 5px;
+}
+
+td a {
+    color: crimson;
+    font-size: small;
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.cart-details img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 1px solid #d3d3d3;
+}
+
+.cart-details tr td .product-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+.total-price, .checkout-btn {
+    display: flex;
+    justify-content: right;
+}
+
+.total-price table {
+    border-top: 3px solid #000;
+    width: 100%;
+    max-width: 400px;
+}
+
+.checkout-btn a {
+    width: 100%;
+    max-width: 400px;
+    background: #000;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.checkout-btn a:hover {
+    background: none;
+    color: #000;
+}
