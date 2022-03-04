@@ -69,14 +69,14 @@
                     <h1>Grey Digital Smarter Watch By SMS</h1>
                     <h4>$30.00</h4>
                     <div class="select-color">
-                        <select>
+                        <select id="colorSelection" onchange="changeColorBox()">
                             <option value="">Select Color</option>
                             <option value="grey">Grey</option>
-                            <option value="navy blue">Navy Blue</option>
+                            <option value="navy">Navy Blue</option>
                             <option value="black">Black</option>
                             <option value="silver">Silver</option>
                         </select>
-                        <div class="color"></div>
+                        <div class="color" id="color"></div>
                     </div>
                     <input type="number" value="1">
                     <a href="" class="btn">ADD TO CART</a>
@@ -205,20 +205,30 @@
         var ProductImg = document.getElementById("productImg");
         var smallImg = document.getElementsByClassName("small-img");
 
-        smallImg[0].onclick = function() {
+        smallImg[0].onclick = function () {
             ProductImg.src = smallImg[0].src;
         }
 
-        smallImg[1].onclick = function() {
+        smallImg[1].onclick = function () {
             ProductImg.src = smallImg[1].src;
         }
 
-        smallImg[2].onclick = function() {
+        smallImg[2].onclick = function () {
             ProductImg.src = smallImg[2].src;
         }
 
-        smallImg[3].onclick = function() {
+        smallImg[3].onclick = function () {
             ProductImg.src = smallImg[3].src;
+        }
+
+
+        // JS to Select and Display Product Color
+        function changeColorBox() {
+            var color = document.getElementById('colorSelection');
+            var selectedColor = color.value;
+            console.log(selectedColor);
+
+            document.getElementById('color').style.background = selectedColor;
         }
     </script>
 </body>
