@@ -141,3 +141,24 @@ section {
     background: #000;
     color: #fff;
 }
+
+
+@media (max-width: 890px) {
+    .filter .filter-content {
+        display: block;
+    }
+
+    .filter-content .parts-1 {
+        margin-bottom: 30px;
+    }
+
+    .page-btn {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 460px) {
+    .filter .max-width {
+        padding: 0 30px;
+    }
+}

@@ -103,3 +103,28 @@ textarea {
     color: crimson;
     background: none;
 }
+
+@media (max-width: 955px) {
+    .contactUs .max-width {
+        display: block;
+    }
+
+    .sections-2 form {
+        padding-left: 0;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .sections-2 form .fields{
+        display: block;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .sections-2 .details-4 {
+        justify-content: center;
+    }
+}

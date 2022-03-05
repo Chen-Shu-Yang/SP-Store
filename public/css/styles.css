@@ -600,6 +600,15 @@
         grid-column-start: 1;
         grid-column-end: span 1;
     }
+
+    .hero .hero-content .text-1 {
+        font-size: 20px;
+    }
+
+    .hero .hero-content .text-2 {
+        font-size: 50px;
+        font-weight: 600;
+    }
 }
 
 @media (max-width: 355px) {
