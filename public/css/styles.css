@@ -581,6 +581,10 @@
 }
 
 @media (max-width: 500px) {
+    .max-width {
+        padding: 0 50px;
+    }
+
     .category {
         height: 65rem;
     }
